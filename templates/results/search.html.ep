@@ -1,0 +1,16 @@
+% layout 'logs', title => 'Log';
+% if ( $alert ) {
+      <p>Более 100 записей</p>
+    % }
+<table>
+% for my $res (@$results) {
+  <tr>
+	<td>
+		%= $res->{int_id}
+	</td>
+	<td>
+		%= $res->{address}
+	</td>
+  </tr>
+% }
+</table>

@@ -1,0 +1,7 @@
+%= form_for 'search' => begin
+  %= label_for address => 'Address'
+  <br>
+  %= text_field address => ''
+  <br>
+  %= submit_button
+% end
